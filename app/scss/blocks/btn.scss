@@ -1,0 +1,33 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    font-family: inherit;
+    font-weight: bold;
+    color: $color-main;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 2px solid $color-main;
+    background-color: $white;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $white;
+        text-decoration: none;
+
+        outline: none;
+        background-color: $color-main;
+    }
+
+    &:active {
+        color: rgba($white, 0.3);
+
+        background-color: $color-main;
+    }
+}
