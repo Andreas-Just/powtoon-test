@@ -1,19 +1,18 @@
 .page-main {
-    @include indent(0 auto, 0);
-
-    width: 320px;
+    
 }
 
-@include media-breakpoint-up(md) {
-    .page-main {
-        position: relative;
+// ≥992px
+@include media-breakpoint-down(md) {
 
-        width: 768px;
-    }
 }
 
-@include media-breakpoint-up(xl) {
-    .page-main {
-        width: 1150px;
-    }
+// ≥768px
+@include media-breakpoint-down(sm) {
+    
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
 }
