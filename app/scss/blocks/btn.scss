@@ -1,33 +1,42 @@
-// .btn {
-//     display: block;
-//     width: 100%;
-//     padding-top: 14px;
-//     padding-bottom: 14px;
+.btn {
+    display: block;
+    width: 494px;
+    height: 66px;
+    padding-top: 7px;
+    padding-left: 20px;
 
-//     font-family: inherit;
-//     font-weight: bold;
-//     color: $color-main;
-//     text-align: center;
-//     text-decoration: none;
-//     text-transform: uppercase;
+    font-family: $fontM;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42.6px;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 
-//     border: 2px solid $color-main;
-//     background-color: $white;
+    background-color: $btn;
+    border: none;
+    border-radius: 33px;
 
-//     cursor: pointer;
+    cursor: pointer;
 
-//     &:hover,
-//     &:focus {
-//         color: $white;
-//         text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $white;
+        text-decoration: none;
 
-//         outline: none;
-//         background-color: $color-main;
-//     }
+        outline: none;
+        background-color: tone($btn, 2, down);
+    }
 
-//     &:active {
-//         color: rgba($white, 0.3);
+    &:active {
+        color: rgba($white, 0.5);
 
-//         background-color: $color-main;
-//     }
-// }
+        background-color: tone($btn, 5, down);
+    }
+
+    &--header {
+    	margin-top: 12px;
+    	margin-left: 190px;
+    }
+}

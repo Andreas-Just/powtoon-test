@@ -1,42 +1,145 @@
 .page-header {
-    // @include indent(0 auto, 0);
+    width: 100%;
 
-    // display: flex;
-    // flex-direction: column;
-    // width: 320px;
+    background-image: linear-gradient(to bottom, #f9e9a7, #63c9c4);
+}
+
+.page-header__wrap {
+    max-width: 1920px;
+    min-height: 1080px;
+
+    background-image: url("../img/bg-header@1x.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-header@2x.png");
+        background-size: 1221px auto;
+    }
 }
 
 .page-header__logo {
-    // margin-left: 177px;
+    margin-left: 177px;
+}
+
+.page-header__inner {
+    max-width: 900px;
+    margin-top: 223px;
+    margin-left: 190px;
+
+    font-family: $fontM;
 }
 
 .page-header__intro {
-    
+    @include indent;
+
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    color: #44a09b;
 }
 
 .page-header__title {
-    
+    @include indent;
+
+    margin-top: 28px;
+
+    font-size: 62px;
+    font-weight: normal;
+    line-height: 84px;
+    word-spacing: 5px;
+
+    b {
+        word-spacing: 23px;
+    }
 }
 
 .page-header__info {
-    
+    position: relative;
+
+    width: 718px;
+    height: 212px;
+    margin-top: 53px;
+
+    background-color: $white;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        right: -106px;
+
+        width: 212px;
+        height: 100%;
+
+        border-right: 106px solid $white;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+        content: "";
+    }
+}
+
+.page-header__date {
+	@include indent;
+
+    margin-left: 190px;
+    padding-top: 37px;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 47px;
+    word-spacing: -1px;
+
+
 }
 
 .page-header__btn {
-    
+	position: relative;
+	display: block;
+	margin-top: 68px;
+	margin-left: 900px;
+	color: $white;
+
+	p {
+		@include indent;
+		font-family: $fontV;
+		font-size: 16.2px;
+		line-height: 19.8px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: tone($btn, 2, down);
+
+		path {
+			stroke: tone($btn, 2, down);;
+		}
+	}
+
+	&:active {
+        color: tone($btn, 5, down);
+
+        path {
+			stroke: tone($btn, 5, down);;
+		}
+    }
+}
+
+.page-header__icon {
+	margin-top: 10px;
+	margin-left: 32px;
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
 }

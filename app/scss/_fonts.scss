@@ -1,4 +1,12 @@
 @import "_mixins/font-face";
 
-@include font-face("opensans-example", "../fonts/OpenSansRegular/OpenSansRegular");
-@include font-face("opensans-example", "../fonts/OpenSansBold/OpenSansBold", bold);
+@include font-face("visby-example", "../fonts/VisbyCFDemiBold/VisbyCFDemiBold");
+@include font-face("visby-example", "../fonts/VisbyCFBold/VisbyCFBold", bold);
+@include font-face("visby-example", "../fonts/VisbyCFLight/VisbyCFLight", 200);
+@include font-face("visby-example", "../fonts/VisbyCFThin/VisbyCFThin", 100);
+@include font-face("visby-example", "../fonts/VisbyCFExtraBold/VisbyCFExtraBold", 700);
+@include font-face("visby-example", "../fonts/VisbyCFHeavy/VisbyCFHeavy", 900);
+@include font-face("proximanova-example", "../fonts/ProximaNovaRegular/ProximaNovaRegular");
+@include font-face("muller-example", "../fonts/MullerRegular/MullerRegular");
+@include font-face("muller-example", "../fonts/MullerMedium/MullerMedium", 500);
+@include font-face("muller-example", "../fonts/MullerBold/MullerBold", bold);

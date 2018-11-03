@@ -12,16 +12,16 @@ body {
 }
 
 body {
-    @include indent();
+    @include indent;
 
     min-width: 320px;
     min-height: 100vh;
 
-    font-family: $font;
+    font-family: $fontV;
     font-size: 17px;
     font-style: normal;
     line-height: 1.4;
-    color: $color-main;
+    color: $black;
     word-wrap: break-word;
 
     background-color: $white;
