@@ -1,18 +1,19 @@
 .page-main {
-    
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    background-color: $white;
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
 }

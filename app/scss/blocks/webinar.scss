@@ -1,0 +1,82 @@
+.webinar {
+    position: relative;
+}
+
+.webinar__player {
+    width: 1084px;
+    height: 915px;
+}
+
+.webinar__player-play {
+    position: absolute;
+    top: 382px;
+    left: 448px;
+    z-index: 5;
+}
+
+.webinar__player-btn {
+    width: 181px;
+    height: 181px;
+
+    font-size: 0;
+
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(#030303, 0.64);
+
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        z-index: 10;
+
+        width: 45px;
+        height: 52px;
+
+        background-image: url("../img/triangle.svg");
+        background-repeat: no-repeat;
+
+        content: "";
+        transform: translate(-33%, -50%);
+    }
+}
+
+.webinar__player-info {
+    margin-top: 78px;
+    margin-left: 264px;
+
+    font-family: "Architects Daughter", cursive;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+
+    transform: rotate(11deg);
+
+    &::before {
+        position: absolute;
+        top: -86px;
+        left: -141px;
+        z-index: 10;
+
+        width: 136px;
+        height: 123px;
+
+        background-image: url("../img/arrow.png");
+        background-repeat: no-repeat;
+
+        content: "";
+        transform: rotate(-11deg);
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

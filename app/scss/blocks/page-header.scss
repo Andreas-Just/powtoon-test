@@ -7,6 +7,7 @@
 .page-header__wrap {
     max-width: 1920px;
     min-height: 1080px;
+    margin: 0 auto;
 
     background-image: url("../img/bg-header@1x.png");
     background-repeat: no-repeat;
@@ -63,7 +64,7 @@
 
     background-color: $white;
 
-    &:before {
+    &::before {
         position: absolute;
         top: 0;
         right: -106px;
@@ -80,7 +81,7 @@
 }
 
 .page-header__date {
-	@include indent;
+    @include indent;
 
     margin-left: 190px;
     padding-top: 37px;
@@ -88,48 +89,50 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 47px;
+    color: $btn;
     word-spacing: -1px;
-
-
 }
 
 .page-header__btn {
-	position: relative;
-	display: block;
-	margin-top: 68px;
-	margin-left: 900px;
-	color: $white;
+    position: relative;
 
-	p {
-		@include indent;
-		font-family: $fontV;
-		font-size: 16.2px;
-		line-height: 19.8px;
-		font-weight: 900;
-		text-transform: uppercase;
-	}
+    display: block;
+    margin-top: 68px;
+    margin-left: 900px;
 
-	&:hover {
-		text-decoration: none;
-		color: tone($btn, 2, down);
+    color: $white;
 
-		path {
-			stroke: tone($btn, 2, down);;
-		}
-	}
+    p {
+        @include indent;
 
-	&:active {
+        font-family: $fontV;
+        font-size: 16.2px;
+        font-weight: 900;
+        line-height: 19.8px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        color: tone($btn, 2, down);
+        text-decoration: none;
+
+        path {
+            stroke: tone($btn, 2, down);;
+        }
+    }
+
+    &:active {
         color: tone($btn, 5, down);
 
         path {
-			stroke: tone($btn, 5, down);;
-		}
+            stroke: tone($btn, 5, down);;
+        }
     }
 }
 
 .page-header__icon {
-	margin-top: 10px;
-	margin-left: 32px;
+    margin-top: 10px;
+    margin-left: 32px;
 }
 
 // ≥992px
