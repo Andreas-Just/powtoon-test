@@ -44,3 +44,41 @@
     	padding-left: 0;
     }
 }
+
+// ≥1537px
+@include media-breakpoint-down(xl) {
+    .btn {
+        width: 392px;
+        height: 52px;
+        padding-top: 5px;
+        padding-left: 15px;
+
+        font-size: 27.22px;
+        line-height: 34.11px;
+
+        &--header {
+            margin-top: 10px;
+            margin-left: 150px;
+        }
+
+        &--main {
+            padding-left: 0;
+        }
+    }
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}

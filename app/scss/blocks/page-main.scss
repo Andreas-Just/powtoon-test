@@ -1,9 +1,21 @@
 .page-main {
     display: flex;
     max-width: 1920px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     background-color: $white;
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+	.page-main {
+	    max-width: 1366px;
+	    // margin: 0 auto;
+	}
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
 }
 
 // ≥992px

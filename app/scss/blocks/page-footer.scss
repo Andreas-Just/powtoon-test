@@ -3,35 +3,55 @@
 }
 
 .page-footer__wrap {
-	max-width: 1920px;
-	margin: 0 auto;
+    max-width: 1920px;
+    // margin: 0 auto;
 }
 
 .page-footer__title {
-	@include indent;
-	padding-top: 94px;
-	padding-bottom: 58px;
-	font-family: $fontM;
-	font-size: 55.62px;
+    @include indent;
+
+    padding-top: 94px;
+    padding-bottom: 58px;
+
+    font-family: $fontM;
+    font-size: 55.62px;
     font-weight: 700;
     line-height: 53px;
-    text-transform: uppercase;
+    color: $white;
     text-align: center;
     word-spacing: 5px;
-    color: $white;
+    text-transform: uppercase;
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+	.page-footer__wrap {
+	    max-width: 1537px;
+	    // margin: 0 auto;
+	}
+
+    .page-footer__title {
+        padding-top: 75px;
+        padding-bottom: 45px;
+        
+        font-size: 44.5px;
+        line-height: 42.2px;
+        word-spacing: 2px;
+    }
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-    
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
 }

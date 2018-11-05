@@ -64,9 +64,68 @@
         width: 18px;
         height: 20px;
 
-        background-image: url("../img/heard.svg");
+        background-image: url("../img/heard-desktop2.svg");
         background-repeat: no-repeat;
 
         content: "";
     }
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+    .training {
+        padding-left: 100px;
+    }
+    .training__title {
+        width: 380px;
+        margin-top: 93px;
+
+        font-size: 33px;
+        line-height: 41px;
+    }
+
+    .training__list {
+        width: 475px;
+        margin-top: 21px;
+
+        font-size: 17.6px;
+        line-height: 22.5px;
+    }
+
+    .training__item {
+        margin-bottom: 6px;
+        padding-left: 25px;
+
+        &--consideration::before {
+            left: -2px;
+        }
+
+        &--bonus {
+            margin-top: 38px;
+            margin-bottom: 44px;
+        }
+
+        &--bonus::before {
+            top: 6px;
+            left: -1px;
+
+            background-image: url("../img/heard-desktop1.svg");
+        }
+    }
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
 }

@@ -7,14 +7,14 @@
 .page-header__wrap {
     max-width: 1920px;
     min-height: 1080px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
-    background-image: url("../img/bg-header@1x.png");
+    background-image: url("../img/bg-header2@1x.png");
     background-repeat: no-repeat;
     background-position: 100% 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-header@2x.png");
+        background-image: url("../img/bg-header2@2x.png");
         background-size: 1221px auto;
     }
 }
@@ -115,24 +115,104 @@
     &:hover {
         color: tone($btn, 2, down);
         text-decoration: none;
-
-        path {
-            stroke: tone($btn, 2, down);;
-        }
     }
 
     &:active {
         color: tone($btn, 5, down);
-
-        path {
-            stroke: tone($btn, 5, down);;
-        }
     }
 }
 
 .page-header__icon {
     margin-top: 10px;
     margin-left: 32px;
+}
+
+// ≥1540px
+@include media-breakpoint-down(xl) {
+	.page-header__wrap {
+	    max-width: 1537px;
+	    min-height: 855px;
+	    // margin: 0 auto;
+
+	    background-image: url("../img/bg-header1@1x.png");
+	    background-repeat: no-repeat;
+	    background-position: 101% -7px;
+
+	    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+	        background-image: url("../img/bg-header1@2x.png");
+	        background-size: 977px auto;
+	    }
+	}
+
+	.page-header__logo {
+	    margin-left: 139px;
+	}
+
+	.page-header__inner {
+	    max-width: 720px;
+	    margin-top: 175px;
+	    margin-left: 150px;
+
+	    font-family: $fontM;
+	}
+
+	.page-header__intro {
+	    font-size: 25.61px;
+	}
+
+	.page-header__title {
+	    margin-top: 22px;
+
+	    font-size: 49.63px;
+	    line-height: 67.24px;
+	    word-spacing: 5px;
+
+	    b {
+	        word-spacing: 12px;
+	    }
+	}
+
+	.page-header__info {
+	    width: 570px;
+	    height: 167px;
+	    margin-top: 41px;
+
+	    &::before {
+	        right: -83.5px;
+
+	        width: 167px;
+	        height: 100%;
+
+	        border-width: 83.5px;
+	    }
+	}
+
+	.page-header__date {
+	    margin-left: 150px;
+	    padding-top: 28px;
+
+	    font-size: 22.41px;
+	    line-height: 37.42px;
+	}
+
+	.page-header__btn {
+	    margin-top: 53px;
+	    margin-left: 712px;
+
+	    p {
+	        font-size: 12.98px;
+	        line-height: 15.87px;
+	    }
+	}
+
+	.page-header__icon {
+	    margin-top: 8px;
+	    margin-left: 26px;
+	}
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
 }
 
 // ≥992px
