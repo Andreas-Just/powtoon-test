@@ -4,7 +4,7 @@
 
 .page-footer__wrap {
     max-width: 1920px;
-    // margin: 0 auto;
+    margin: 0 auto;
 }
 
 .page-footer__title {
@@ -27,7 +27,7 @@
 @include media-breakpoint-down(xl) {
 	.page-footer__wrap {
 	    max-width: 1537px;
-	    // margin: 0 auto;
+	    margin: 0 auto;
 	}
 
     .page-footer__title {
